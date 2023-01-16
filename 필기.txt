@@ -1,0 +1,63 @@
+
+
+Spring MVC + Spring AOP 적용
+
+지금 프로젝트 설정 = 팀 프로젝트 설정
+1. pom.xml
+	- 자바 11
+	- 스프링 5.0.7
+	
+2. web.xml
+	- 필터 추가
+	
+3. pom.xml
+	- 의존성 추가
+		- MyBatis
+		- log4j
+		- lombok
+		- Tiles
+		- AOP
+		
+4. 설정
+	a. MyBatis > root-context.xml
+	b. log4j > root-context.xml
+				> log4j.xml 덮어쓰기
+	c. tiles > servlet-context.xml
+	d. AOP > servlet-context.xml
+	
+
+파일 생성
+- SpringAOP > "db.sql"
+
+- com.test.aop 	> "BoardController.java"
+						> "BoardDAO.java"
+						> "BoardDTO.java"
+						
+						> "MemberController.java"
+						> "MemberDAO.java"
+						> "MemberDTO.jave"
+						
+						> "Logger.java"
+						> "Auth.java"
+		
+- views > "layout" 	> "layout.jsp"
+			> "board"		> "list.jsp"	
+								> "view.jsp"
+								> "add.jsp"
+								> "del.jsp"
+			> "member"	> "login.jsp"
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
